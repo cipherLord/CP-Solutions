@@ -1,8 +1,8 @@
 #include"bits/stdc++.h"
 
-#define loop(i,n) for (i = 0; i < n; ++i) 
-#define LOOP(i,k,n) for (i = k; i <= n; ++i) 
-#define LOOPREV(i,k,n) for (i = k; i >= n; --i) 
+#define loop(i,n) for (int i = 0; i < n; ++i) 
+#define LOOP(i,k,n) for (int i = k; i <= n; ++i) 
+#define LOOPREV(i,k,n) for (int i = k; i >= n; --i) 
 #define mp make_pair(x,y)
 #define pa pair <int,int>
 #define vec vector<int>
