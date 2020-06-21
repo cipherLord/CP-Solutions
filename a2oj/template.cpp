@@ -1,6 +1,7 @@
 #include"bits/stdc++.h"
 
 #define loop(i,n) for (int i = 0; i < n; ++i) 
+#define looprev(i,n) for (int i=n-1; i>=0 ; --i)
 #define LOOP(i,k,n) for (int i = k; i <= n; ++i) 
 #define LOOPREV(i,k,n) for (int i = k; i >= n; --i) 
 #define mp make_pair(x,y)
