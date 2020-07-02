@@ -18,9 +18,45 @@
 
 using namespace std;
 
+bool checkComplexity (ll complexity , vec &b, vec&a){
+    loop(i,b.size()){
+        if(b[i] == complexity) return true;
+    }
+    loop(i,b.size()){
+        if(b[i] > *max_element(a.begin(),a.end())) {
+            b[i] = complexity;
+            return true;
+        }
+    }
+    return false;
+}
+
 int main()
 {
     fastio;
     cin.tie(NULL);
     cout.tie(NULL);
+
+    ll n, m;
+    cin >> n >> m;
+    vec a(n),b(m);
+    loop(i,n){
+        cin >> a[i];
+    }
+
+    loop(i,m){
+        cin >> b[i];
+    }
+
+    ll count = 0;
+
+    loop(i,n){
+        if(!checkComplexity(a[i],b,a)) count++;
+    }
+
+    cout << count;
+
+
+
+
 }
