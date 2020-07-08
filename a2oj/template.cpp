@@ -15,6 +15,7 @@
 #define ld long double
 #define pub push_back
 #define pob pop_back
+#define emp emplace_back
 
 using namespace std;
 
