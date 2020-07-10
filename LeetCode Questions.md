@@ -49,3 +49,23 @@ DP DAY:
 
 2. Rotate Image:
    Not a DP question, but involves a good trick, you need to remember.
+
+9th July 2020
+
+Today we learn: Hashing and Hash Table.
+
+In C++ it is [unordered_map](http://www.cplusplus.com/reference/unordered_map/unordered_map/).
+
+Other important links are:
+1. https://www.geeksforgeeks.org/hashing-set-1-introduction/?ref=lbp
+2. https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/?ref=lbp
+3. https://www.geeksforgeeks.org/hashing-set-3-open-addressing/?ref=lbp
+
+Questions:
+1. [3sum](https://leetcode.com/problems/3sum/)'
+2. [3sum Closest](https://leetcode.com/problems/3sum-closest/)
+3. [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+4. [4 Sum](https://leetcode.com/problems/4sum/)
+5. [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
+
+Easy questions, but good practice for Arrays and Hash. In default I did by array, 2nd try must be with hash.
