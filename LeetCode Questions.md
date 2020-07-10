@@ -29,7 +29,7 @@ MATH DAY:
 
    It was a nice question, check corner cases, also there's a bit of a trick, try to divide into cases, when n is odd and even.
 
-2.[Permutation Sequence](https://leetcode.com/problems/permutation-sequence) :
+2. [Permutation Sequence](https://leetcode.com/problems/permutation-sequence) :
 
 ​		You wont find it as a math problem at first. Try dividing into blocks and finding each permutation as a function of index and k. If you still don't get it check out this [link](https://leetcode.com/problems/permutation-sequence/discuss/696595/C%2B%2B-or-Very-Easy-and-Detailed-Explanation-(Idea-%2B-code))
 
