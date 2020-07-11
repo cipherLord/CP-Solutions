@@ -69,20 +69,3 @@ Questions:
 5. [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
 
 Easy questions, but good practice for Arrays and Hash. In default I did by array, 2nd try must be with hash.
-
-10th July 2020
-
-Today we continue the work on hash and string too.
-
-1. [Group Anagrams](https://leetcode.com/problems/group-anagrams/submissions/)
-   The question was pretty easy, I could have just sorted the strings and then matched it with the key, but took the longer approach. Spend more time on thinking before jumping in on writing the code.
-
-11th July 2020
-
-Had some backlog of work so couldn't do much yesterday, so I'll finish with the string today.
-
-1. [Delete Operation for two strings](https://leetcode.com/problems/delete-operation-for-two-strings/)
-   Remember LCS finding using DP?
-2. [Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/)
-   This is pretty easy. Checkout sscanf
-3. [Reorganize String](https://leetcode.com/problems/reorganize-string/)
