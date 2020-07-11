@@ -29,11 +29,11 @@ MATH DAY:
 
    It was a nice question, check corner cases, also there's a bit of a trick, try to divide into cases, when n is odd and even.
 
-2.[Permutation Sequence](https://leetcode.com/problems/permutation-sequence) :
+2. [Permutation Sequence](https://leetcode.com/problems/permutation-sequence) :
 
 ​		You wont find it as a math problem at first. Try dividing into blocks and finding each permutation as a function of index and k. If you still don't get it check out this [link](https://leetcode.com/problems/permutation-sequence/discuss/696595/C%2B%2B-or-Very-Easy-and-Detailed-Explanation-(Idea-%2B-code))
 
-3. Permutations, Permutations II, Next Permutations:
+3. [Permutations](https://leetcode.com/problems/permutations), [Permutations II](https://leetcode.com/problems/permutations-ii), [Next Permutations](https://leetcode.com/problems/next-permutation):
 
    Classic questions on Backtracking, its a very important concept, learn to apply it.
 
@@ -43,11 +43,11 @@ MATH DAY:
 
 DP DAY:
 
-1. Unique Paths, Unique Paths II, Minimum Path Sum:
+1. [Unique Paths](https://leetcode.com/problems/unique-paths), [Unique Paths II](https://leetcode.com/problems/unique-paths-ii), [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum):
 
    A good practice of DP, start thinking about base cases and bottom-up approach.
 
-2. Rotate Image:
+2. [Rotate Image](https://leetcode.com/problems/rotate-image):
    Not a DP question, but involves a good trick, you need to remember.
 
 9th July 2020
@@ -62,10 +62,27 @@ Other important links are:
 3. https://www.geeksforgeeks.org/hashing-set-3-open-addressing/?ref=lbp
 
 Questions:
-1. [3sum](https://leetcode.com/problems/3sum/)'
+1. [3sum](https://leetcode.com/problems/3sum/)
 2. [3sum Closest](https://leetcode.com/problems/3sum-closest/)
 3. [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 4. [4 Sum](https://leetcode.com/problems/4sum/)
 5. [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
 
 Easy questions, but good practice for Arrays and Hash. In default I did by array, 2nd try must be with hash.
+
+10th July 2020
+
+Today we continue the work on hash and string too.
+
+1. [Group Anagrams](https://leetcode.com/problems/group-anagrams/submissions/)
+   The question was pretty easy, I could have just sorted the strings and then matched it with the key, but took the longer approach. Spend more time on thinking before jumping in on writing the code.
+
+11th July 2020
+
+Had some backlog of work so couldn't do much yesterday, so I'll finish with the string today.
+
+1. [Delete Operation for two strings](https://leetcode.com/problems/delete-operation-for-two-strings/)
+   Remember LCS finding using DP?
+2. [Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/)
+   This is pretty easy. Checkout sscanf
+3. [Reorganize String](https://leetcode.com/problems/reorganize-string/)
