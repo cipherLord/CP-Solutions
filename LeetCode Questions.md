@@ -103,3 +103,15 @@ Lets continue with Arrays.
 5. [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
    Thinking O(n^2) one is pretty easy, for O(n), thinnk that you dont have to return the vector, but an integer. So there must be a maths trick so that you can solve it in one-pass!
 6. [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+
+15th Jul 2020
+
+Practicing Stacks today.
+
+1. [Simplify Path](https://leetcode.com/problems/simplify-path/)
+   Learnt a nice thing viz., stringstream and getline. Let me drop the links to both articles so you can refer. getline() would allow you to read between two '/' here.
+   [stringstream](https://www.geeksforgeeks.org/stringstream-c-applications/)
+   [getline()](https://www.geeksforgeeks.org/getline-string-c/)
+
+2. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)
+   Very important question, must do! Lesson learnt: Use pen-paper boi!
