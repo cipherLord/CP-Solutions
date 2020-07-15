@@ -86,3 +86,20 @@ Had some backlog of work so couldn't do much yesterday, so I'll finish with the 
 2. [Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/)
    This is pretty easy. Checkout sscanf
 3. [Reorganize String](https://leetcode.com/problems/reorganize-string/)
+   Its pretty easy, use counting sort for O(n).
+
+14th Jul 2020
+
+Lets continue with Arrays.
+
+1. [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
+   It's a pretty easy one. Keep a flag of both rows and columns to be made 0.
+2. [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
+   Ok, first thing that should hit the mind after seeing sorted rows is "Binary Search"!!!! Take the matrix as a big 1D array to traverse. So start point is "0" and end point is  "m*n - 1". Now you have to traverse and binary search like a 1D array.
+3. [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
+   This is a tricky yet simple one. You have to traverse both row and col wise with certain conditions!
+4. [Sort Colors](leetcode.com/problems/sort-colors/)
+   Counting sort yay!!!
+5. [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+   Thinking O(n^2) one is pretty easy, for O(n), thinnk that you dont have to return the vector, but an integer. So there must be a maths trick so that you can solve it in one-pass!
+6. [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
