@@ -101,7 +101,7 @@ Lets continue with Arrays.
 4. [Sort Colors](leetcode.com/problems/sort-colors/)
    Counting sort yay!!!
 5. [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
-   Thinking O(n^2) one is pretty easy, for O(n), thinnk that you dont have to return the vector, but an integer. So there must be a maths trick so that you can solve it in one-pass!
+   Thinking O(n^2) one is pretty easy, for O(n), think that you dont have to return the vector, but an integer. So there must be a maths trick so that you can solve it in one-pass!
 6. [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
 15th Jul 2020
@@ -115,3 +115,16 @@ Practicing Stacks today.
 
 2. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)
    Very important question, must do! Lesson learnt: Use pen-paper boi!
+
+16th Jul 2020
+
+Continuing stacks!
+
+1. [132 Pattern](https://leetcode.com/problems/132-pattern/)
+   A pretty difficult and tricky one for me,yes. First of all a small idea hit me, but it was O(n^3), so will try it -_-. After that I got an idea of stack, but didn't know how to proceed. So here it goes if you are struggling. See you have to calculate, triplets such that a1< a3< a2 right? So tell me for what you'll make a stack, obviously to keep the largest one, i.e , a2. Now if the incoming a2 (that is gonna be pushed into stack) is greater than the top, then the top element is a good candidate for a3, right? So the only traversal you have to do is for a1, rest all are handled by pushing and popping the stack (*winks). So the time complexity reduced to O(n)!!!!!!!!! Damn,enjoy xD.
+
+2. [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)
+   Only in one case you will have collision that is stack.top() goes right and incoming asteroid goes left! Keep a flag for checking if the asteroid is getting destroyed or not.
+
+3. [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)
+   Simple trick for cyclic arrays, resize the array to double size, and copy elements, *wink.
