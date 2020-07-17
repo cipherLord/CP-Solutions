@@ -128,3 +128,19 @@ Continuing stacks!
 
 3. [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)
    Simple trick for cyclic arrays, resize the array to double size, and copy elements, *wink.
+
+17th Jul 2020
+
+Today Sliding Window and some Hash Tables!
+
+1. [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+   If you use sort, it will do in O(nlogn), is it bad? Can we make it better? O(n) really? Yes, the answer is two words, Sliding Window!
+
+2. [Permutation in String](https://leetcode.com/problems/permutation-in-string/)
+   If you have done the above, you know how to do this!
+
+3. [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)
+   You gotta check a long sequence of 10 chars/digits. First thing that hit my mind is extra space, more like a hashMap? You can map A,C,T,G in some manner, you have to also keep in mind that substring are only once added in the result vector. Ok, how you store a hash of the substring? Store it as some integer, in a set! Why a set? Because searching a no. in a set only takes O(1) time as compared to array's O(n).
+
+4. [Contiguous Array](https://leetcode.com/problems/contiguous-array/)
+   Make a hashMap for <sum,index>, now, there are two cases if sum at index i = 0 or is not 0, if its 0, then i+1 is the longest array, or if its not 0; you have to find a previous index with the same sum, coz difference b/w them [i,j) will be 0!!!
