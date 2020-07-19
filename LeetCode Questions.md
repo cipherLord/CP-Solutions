@@ -144,3 +144,32 @@ Today Sliding Window and some Hash Tables!
 
 4. [Contiguous Array](https://leetcode.com/problems/contiguous-array/)
    Make a hashMap for <sum,index>, now, there are two cases if sum at index i = 0 or is not 0, if its 0, then i+1 is the longest array, or if its not 0; you have to find a previous index with the same sum, coz difference b/w them [i,j) will be 0!!!
+
+18th Jul 2020
+
+Tried somethings on Parentheses.
+
+1. [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
+   You can do with simple recursion technique, Take a 2*n string, and tell me what is the constraint? Obviously, no. of left brackets at any point of time should be greater than the right brackets also no. of left brackets should not exceed n!
+
+2. [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)
+   When we encounter '(' no. of balance factor,i.e, left-right, increases
+   When we encounter ')' it increases;
+   When we encounter '*' it can be changed by -1,0,1;   
+   So we can have a range of the balance factor, and if at some place.
+
+19th Jul 2020
+
+Lets go back on track, I did misc. questions today.
+
+1. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+   I guess its pretty easy, just simple constraints!
+
+2. [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
+   Try for a greedy approach! Find max overlapping and then n- that!
+
+3. [Find Peak Element](https://leetcode.com/problems/find-peak-element/)
+   Simple Binary Traversal, you can skip if you want!
+
+4. [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+   Ok so if you have done the Largest Contiguous SubArray Sum question [refer to this](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/), you might know the O(n) Kaden Algorithm, then you might know what to do! If you know the old O(nlogn) Binary search one then you should check it out. Now the mistake I did while approaching the question from Kaden Algo is I included a new space as in vector<int> temp. Now the issue is when sum > target I have to clear the vector as temp.clear(), also you want the first element(front) to be removed from temp while(sum > target). This is an issue as it will lead to TLE. Instead you can do that simply by introducing another iterator j. So while one loop traverses the array, the other clears the no.s in temp while (sum >target).
