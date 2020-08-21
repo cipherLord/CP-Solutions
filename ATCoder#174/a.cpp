@@ -24,20 +24,15 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
-
+ 
 using namespace std;
-
-void solve(){
-    
-}
-
+ 
 int main()
 {
     fastio;
     cin.tie(NULL);
     cout.tie(NULL);
-    ict;
-    int increm = t;
-    while(t--) solve();
+  	ict;
+ 	if(t>=30) cout << "Yes";
+  	else cout << "No";
 }

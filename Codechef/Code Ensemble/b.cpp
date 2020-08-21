@@ -24,12 +24,45 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
 
 void solve(){
-    
+    string s;
+    unordered_map<char,int> count;
+    cin >> s;
+    for(int i = 0; i< s.length(); i++){
+        count[s[i]]++;
+    }
+    ll x1,y1;
+    cin >> x1 >> y1;
+    ll q;
+    cin >> q;
+    ll x2,y2;
+    bool flag1 = false,flag2 = false;
+    while(q--){
+        flag1 = false;
+        flag2 = false;
+        cin >> x2 >> y2;
+        if(x2-x1>0){
+            if(count['R']>=x2-x1) flag1 = true;
+        }
+        else{
+            if(count['L']>=x1-x2) flag1 = true;
+        }
+
+        if(y2-y1>0){
+            if(count['U']>=y2-y1) flag2 = true;
+        }
+        else{
+            if(count['D']>=y1-y2) flag2 = true;
+        }
+
+        if(flag1 && flag2) cout << "YES " << abs(x2-x1) + abs(y2-y1)<<endl;
+        else cout << "NO" << endl;
+    }
+
+
 }
 
 int main()

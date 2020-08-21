@@ -24,12 +24,26 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
 
+
 void solve(){
-    
+    int n;
+    cin >> n;
+    string s;
+    cin >> s;
+    vector<int> alph(26,0);
+    for(int i = 0 ; i< n ; i++){
+        alph[s[i]-'a']++;
+    } 
+    for(int i = 0; i< 26 ; i++){
+        if(alph[i] > 0 && alph[i]%2==1) {
+            cout << "NO" <<endl;
+            return;
+        }
+    }
+    cout << "YES" << endl;
 }
 
 int main()

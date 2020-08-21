@@ -24,13 +24,9 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
 
-void solve(){
-    
-}
 
 int main()
 {
@@ -38,6 +34,31 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
     ict;
-    int increm = t;
-    while(t--) solve();
+    while(t--){
+        string a;
+        cin >> a;
+        vector <int> store;
+        int n = a.size();
+
+        int sum =1;
+        loop(i,n-1){
+            if(a[i] == '1' && a[i+1] == '1'){
+                sum +=1;
+            }
+            else if (a[i] == '1' && a[i+1] == '0'){
+                store.push_back(sum);
+                sum = 1;
+            }
+        }
+        if(a[n-1] == '1') store.push_back(sum);
+
+        sort(store.begin(),store.end(),greater<int>());
+        int alice = 0;
+        int bob = 0;
+        for(int i = 0 ; i<store.size(); i++){
+            if(i%2) bob+= store[i];
+            else alice+=store[i];
+        }
+        cout << alice<< endl;
+    }
 }

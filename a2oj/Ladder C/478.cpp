@@ -24,12 +24,17 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
 
 void solve(){
-    
+    ll A[3];
+    loop(i,3) cin>>A[i];
+    sort(A,A+3);
+    if(A[2] > 2*(A[1] + A[0]))
+        cout<<A[1] + A[0]<<endl;
+    else
+        cout<< (A[0]+A[1]+A[2]) / 3 << endl;
 }
 
 int main()
@@ -37,7 +42,5 @@ int main()
     fastio;
     cin.tie(NULL);
     cout.tie(NULL);
-    ict;
-    int increm = t;
-    while(t--) solve();
+    solve();
 }

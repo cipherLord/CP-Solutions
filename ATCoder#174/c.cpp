@@ -24,20 +24,39 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
-
-void solve(){
-    
-}
 
 int main()
 {
     fastio;
     cin.tie(NULL);
     cout.tie(NULL);
-    ict;
-    int increm = t;
-    while(t--) solve();
+
+    ll k;
+    cin >> k;
+    ll count =1;
+    int num = 7;
+
+    if(k%2==0 || k%5==0){
+        cout << -1;
+        return 0;
+    }
+    if(k==1 || k==7){
+        cout << 1;
+        return 0;
+    }
+
+    while(1){
+        
+        num = (num * 10 + 7) % k; 
+        count++;
+        // If number is divisible by k 
+        // then remainder will be 0 
+        if (num == 0) {
+            cout << count;
+            return 0;
+        } 
+
+    }
 }

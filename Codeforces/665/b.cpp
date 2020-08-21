@@ -24,12 +24,26 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
 
 void solve(){
-    
+    ll x1,y1,z1,x2,y2,z2;
+    cin >> x1 >> y1 >> z1;
+    cin >> x2 >> y2 >> z2;
+    int res = 0;
+    if(z1 >y2){
+        res += 2*y2;
+        z1 -= y2;
+        if(x1 + z1 >= z2) cout << res << endl;
+        else cout << res - 2* (z2 - z1- x1) << endl;
+    }
+    else{
+        res += 2*z1;
+        y2 -= z1;
+        if(x1 >= z2) cout << res << endl;
+        else cout << res - 2*(z2 - x1) << endl;
+    }
 }
 
 int main()

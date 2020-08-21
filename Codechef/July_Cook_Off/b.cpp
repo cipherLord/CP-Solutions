@@ -24,12 +24,28 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
+#define all(a) a.begin(),a.end()
 
 using namespace std;
 
 void solve(){
-    
+    ll n;
+    cin >> n;
+    vector<ll> a(n);
+    loop(i,n) cin >> a[i];
+    unordered_set<ll> check;
+    sort(all(a),greater<ll>());
+    ll res = a[0];
+    bool flag = true;
+    for(auto x : a){
+        res |= x;
+        if(check.count(res)>0){
+            flag = false;
+        }
+        else check.insert(res);
+    }
+    if(flag) cout << "YES" << endl;
+    else cout << "NO" << endl;
 }
 
 int main()

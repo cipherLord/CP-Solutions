@@ -24,13 +24,8 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
-
-void solve(){
-    
-}
 
 int main()
 {
@@ -39,5 +34,19 @@ int main()
     cout.tie(NULL);
     ict;
     int increm = t;
-    while(t--) solve();
+    while(t--){
+        ll n;
+        cin >> n;
+        vector <ll> a(n);
+        loop(i,n) cin >> a[i];
+        bool flag = true;
+        for(int i =0 ; i< n-1; i++){
+            if(a[i]!=a[i+1]){
+                flag = false;
+                break;
+            }
+        }
+        if(flag)cout << n << endl;
+        else cout << 1 << endl; 
+    }
 }

@@ -24,20 +24,24 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
-
-void solve(){
-    
-}
 
 int main()
 {
     fastio;
     cin.tie(NULL);
     cout.tie(NULL);
+
     ict;
-    int increm = t;
-    while(t--) solve();
+    while(t--){
+        ln(n);
+        vec a(n);
+        loop(i,n){
+            cin >> a[i];
+        }
+
+        if(a[0] + a[1] <= a[n-1]) cout << "1 2 " << n << endl;
+        else cout << "-1"<< endl;
+    }
 }

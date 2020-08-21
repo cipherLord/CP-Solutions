@@ -24,11 +24,24 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
 
 void solve(){
+   ll r,g,b,w;
+   cin >> r>>g>>b>>w;
+   if(r%2 + g%2 + b%2 +w%2 <= 1)cout << "Yes" << endl;
+   else{
+       if (r>0 && g>0 && b>0){
+            r--;
+            g--;
+            b--;
+            w = w+3;
+            if(r%2 + g%2 + b%2 + w%2<= 1)cout << "Yes" << endl;
+            else cout << "No" << endl;
+       }
+       else cout << "No" << endl;
+   }
     
 }
 

@@ -24,12 +24,27 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
+#define all(a) a.begin(),a.end()
 
 using namespace std;
 
 void solve(){
-    
+    ll n;
+    cin >> n;
+    vector <ll> v(n);
+    loop(i,n) cin >> v[i];
+    vector <ll> temp = v;
+    sort(all(temp));
+    for(int i = 0; i< n ; i++){
+        if(__gcd(temp[i],temp[0])!= temp[0]){
+            if(temp[i]!=v[i]){
+                cout << "NO" << endl;
+                return;
+            }
+        }
+    }
+    cout << "YES" << endl;
+
 }
 
 int main()

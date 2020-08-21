@@ -24,13 +24,35 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
 
-void solve(){
-    
-}
+ll findSubArrays(vector<int> &arr, int n) 
+{  
+    unordered_map<int, vector<int> > map; 
+   
+    ll sum = 0; 
+    ll count = 0;
+   
+    for (ll i = 0; i < n; i++) 
+    { 
+        sum += arr[i]; 
+
+        if (sum == 0) count++;
+            
+
+        if (map.find(sum) != map.end()) 
+        { 
+            vector<int> vc = map[sum]; 
+            for (auto it = vc.begin(); it != vc.end(); it++) 
+                count++;
+        } 
+   
+        map[sum].push_back(i); 
+    } 
+    return count; 
+} 
+  
 
 int main()
 {
@@ -38,6 +60,22 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
     ict;
-    int increm = t;
-    while(t--) solve();
+    while(t--){
+        int n;
+        cin >> n;   
+        string s;
+        cin >> s;
+
+        vector<int> store;
+        for(auto ch : s){
+            store.pub(ch-'0');
+        }
+
+        loop(i,n){
+            store[i]--;
+        }
+        ll res = findSubArrays(store,n);
+
+        cout << res << endl;
+    }
 }

@@ -24,12 +24,17 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
 
 void solve(){
-    
+    ll n,k;
+    cin >> n >> k;
+    if(k>=n) cout << k-n <<endl;
+    else{
+        if((n-k)%2 == 1) cout << 1 <<endl;
+        else cout << 0 <<endl;
+    }
 }
 
 int main()

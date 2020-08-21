@@ -24,12 +24,28 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
 
 void solve(){
-    
+    ll n,k;
+    cin >> n >>k;
+    vector<ll> v(n);
+    for(int i = 0; i < n; i++) cin >> v[i];
+    ll maxEle = *max_element(v.begin(),v.end());
+    loop(i,n) v[i] = maxEle - v[i];
+    if(k%2){
+        loop(i,n) cout << v[i] << " ";
+        cout << endl;
+        return;
+    }
+    else {
+        maxEle = *max_element(v.begin(),v.end());
+        loop(i,n) v[i] = maxEle - v[i];
+        loop(i,n) cout << v[i] << " ";
+        cout << endl;
+        return;        
+    }
 }
 
 int main()

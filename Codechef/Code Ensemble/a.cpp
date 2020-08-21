@@ -24,12 +24,21 @@
 #define pof pop_front
 #define puf push_front
 #define emp emplace_back
-#define all(a) a.begin(),a.end();
 
 using namespace std;
 
 void solve(){
-    
+    ll n;
+    cin >> n;
+    vector<ll> v(n);
+    loop(i,n) cin >> v[i];
+    ll count =0;
+    for(ll i = 0 ; i < n-1; i++){
+        for(ll j = i+1; j< n; j++){
+            if((v[i] & v[j]) == v[i]) ++count;
+        }
+    }
+    cout << count << endl;
 }
 
 int main()

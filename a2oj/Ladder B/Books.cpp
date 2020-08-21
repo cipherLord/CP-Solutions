@@ -41,7 +41,7 @@ ll crossArraySum (vec &v , ll l,ll m, ll r, ll t){
         }
     }
 
-    sum = 0; 
+    sum = 0;     
     ll right_sum = INT_MIN; 
     LOOP(i,m+1,r){ 
         sum = sum + v[i]; 
